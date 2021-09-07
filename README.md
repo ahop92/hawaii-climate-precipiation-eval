@@ -1,4 +1,4 @@
-# sqlalchemy-challenge
+# Hawaii Precipiation and Cimate Analysis/Evaluation
 
 ## Background
 
