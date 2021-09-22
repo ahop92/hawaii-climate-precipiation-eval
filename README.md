@@ -46,16 +46,25 @@ The goal of this section was to provide an overall precipitation analysis over a
 ![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/summarystats.PNG)
 
 
-A bar plot visualization can be found for an overall analysis of precipitation data for all of the stations in the jupyter notebook.
-
 ### Station Analysis
-The goal of this section was to provide an overall precipitation analysis over all stations present in the database using the following steps:
+The goal of this section was to provide an overall precipitation analysis by station in the database using the following steps:
 
 1. Design a query to calculate the total number of stations in the dataset. This was accomplished using the Stations class/table. 
+
 2. Design a query to find the most active stations by counting the number of times each station appeared in the Measurement class/table
+
 3. List the stations and observation counts in descending order and extract the highest ranking station to use for other queries. 
+
+![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/stationoverview.PNG)
+
 4. Using the output from #3, calculate the lowest, highest, and average temperature.
+
+![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/highestlowestaverage.PNG)
+
 5. Design a query to retrieve the last 12 months of temperature observation data (TOBS) for the station with the highest number of appearances.
+
+![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/TOBS.PNG)
+
 
 
 
@@ -66,11 +75,32 @@ The goal of this section was to provide an overall precipitation analysis over a
 With the numerical analysis and visualizations complete, the app.py file was created to allow users to request information from the Hawaii database with API style deployment using the following approach: 
 
 1. A home page was created to show the user all of the routes they can use to retrieve information from the database. 
+
+![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/pageoverview.PNG)
+
 2. A route was created to pull the general precipitation data associated with each date. 
+
+![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/prcpdict.PNG)
+
 3. A route was created to pull the basic information about each station.
+
+![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/stationjson.PNG)
+
 3. A route was created to pull the TOBS information for the most active station. 
+
+![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/tobsjson.PNG)
+
 4. A route was created to pull a statistical analysis on the TOBS information for anything greater than or equal to the user entered start date. 
+![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/dateusecase.PNG)
+
+![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/dateusecaseresults.PNG)
+
 5. A route was created to pull a statistical analysis on the TOBS information for anything in between the user entered start and end dates, inclusive. 
+
+![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/statisticsusecase.PNG)
+
+![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/statisticsusecaseresults.PNG)
+
 
 The user is instructed to access the API using the following directions 
 
