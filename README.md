@@ -91,9 +91,10 @@ With the numerical analysis and visualizations complete, the app.py file was cre
 ![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/tobsjson.PNG)
 
 4. A route was created to pull a statistical analysis on the TOBS information for anything greater than or equal to the user entered start date. 
+
 ![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/dateusecase.PNG)
 
-![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/dateusecaseresults.PNG)
+![image](https://raw.github.com/ahop92/hawaii-climate-precipiation-eval/main/images/dateuseresult.PNG)
 
 5. A route was created to pull a statistical analysis on the TOBS information for anything in between the user entered start and end dates, inclusive. 
 
