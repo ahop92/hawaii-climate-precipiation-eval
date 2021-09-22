@@ -31,14 +31,16 @@ def welcome():
 
     """List all available api routes."""
     return (
-        f"Hi there! Here are your available routes to explore the recorded weather information for weather bases in Hawaii API.<br/><br/>"
+        f"Hi there! Welcome to the Hawaii precipiation and station API. Please browse the different options for data using the routes specified below.<br/><br/>"
         f"Available Routes:<br/>"
         f"/api/v1.0/precipitation<br/>"
         f"/api/v1.0/stations<br/>"
         f"/api/v1.0/tobs<br/>"
         f"/api/v1.0/start/YYYY-MM-DD<br/>"
         f"/api/v1.0/start/YYYY-MM-DD/end/YYYY-MM-DD<br/><br/><br/>"
-        f"For the start date and end date routes: please offer dates in YYYY-MM-DD format."
+        f"<b>General Instructions:</b><br><br> Please append either of the routes onto the ending of the address used to deploy this app.<br><br> For example, if using a local production server such as 127.0.0.1:5000<br/>"
+        f"you would write `127.0.0.1:5000/api/v1.0/precipitation` to view all of the<br> precipitation data offered by this API."
+        f"<br><br>For the start date and end date routes: please offer dates in YYYY-MM-DD format."
     )
 
 
